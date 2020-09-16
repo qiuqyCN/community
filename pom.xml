@@ -29,7 +29,19 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
+        <profile>
+            <id>pro</id>
+            <properties>
+                <db.url>jdbc:mysql://81.68.76.216:3306/db_bbs_test?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Shanghai</db.url>
+                <db.user>root</db.user>
+                <db.password>@eternity765284</db.password>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
     </profiles>
+
 
     <dependencies>
         <dependency>
@@ -65,10 +77,18 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.57</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>5.1.45</version>-->
+<!--        </dependency>-->
+
+        <!--mysql-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.45</version>
+            <version>8.0.20</version>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
@@ -115,10 +135,17 @@
                     <password>${db.password}</password>
                 </configuration>
                 <dependencies>
+<!--                    <dependency>-->
+<!--                        <groupId>mysql</groupId>-->
+<!--                        <artifactId>mysql-connector-java</artifactId>-->
+<!--                        <version>5.1.45</version>-->
+<!--                    </dependency>-->
+                    <!--mysql-->
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.45</version>
+                        <version>8.0.20</version>
+                        <scope>runtime</scope>
                     </dependency>
                     <dependency>
                         <groupId>com.h2database</groupId>
